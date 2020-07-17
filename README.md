@@ -1,11 +1,12 @@
-# Description
+## Description
 Yet another snowflake sequence id generator
 
 ## Inspired By
 This moduled is inspired by below:
-1- https://developer.twitter.com/en/docs/basics/twitter-ids
-1- https://www.callicoder.com/distributed-unique-id-sequence-number-generator/
-1- https://www.npmjs.com/package/flake-idgen
+
+1. https://developer.twitter.com/en/docs/basics/twitter-ids
+1. https://www.callicoder.com/distributed-unique-id-sequence-number-generator/
+1. https://www.npmjs.com/package/flake-idgen
 
 ## Why?
 This moduled is implemented as a weekend project in order to understand the Twitter Snowflake ID generator.
@@ -24,7 +25,7 @@ npm install snowflakejs
 
 ```javascript
 
-const SnowFlake = require('./flake');
+const SnowFlake = require('snowflakejs');
 
 const snowFlakeGen = new SnowFlake({ epoch: new Date().getTime(), machine: 15, worker: 10 });
 
