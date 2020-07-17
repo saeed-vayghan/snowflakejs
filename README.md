@@ -2,7 +2,7 @@
 Yet another snowflake sequence id generator
 
 ## Inspired By
-This moduled is inspired by below:
+This moduled is inspired by:
 
 1. https://developer.twitter.com/en/docs/basics/twitter-ids
 1. https://www.callicoder.com/distributed-unique-id-sequence-number-generator/
