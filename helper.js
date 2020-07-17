@@ -21,6 +21,8 @@ const spliter = (input) => {
   return parts.join(' ');
 };
 
+
+// Credit: https://stackoverflow.com/users/732396/yanhan
 function binaryToHex(s) {
   let i, k, part, accum, ret = '';
 
