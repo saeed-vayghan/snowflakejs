@@ -1,5 +1,5 @@
 ## Description
-Yet another snowflake sequence id generator
+Yet another snowflake sequence id generator.
 
 ## Inspired By
 This moduled is inspired by:
