@@ -1,7 +1,7 @@
 {
   "name": "simple-snowflake",
-  "version": "1.0.1",
-  "description": "Yet another snowflake sequence id generator",
+  "version": "1.0.2",
+  "description": "Yet another snowflake sequence id generator.",
   "main": "index.js",
   "author": "saeed.vayghan@gmail.com",
   "license": "MIT",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/snowflakejs.git"
+    "url": "https://github.com/saeed-vayghan/snowflakejs.git"
   },
-  "homepage": "https://github.com/username/snowflakejs"
+  "homepage": "https://github.com/saeed-vayghan/snowflakejs"
 }

@@ -15,7 +15,7 @@ You can find various Snowflake implementation on the net, others were too compli
 
 
 ```bash
-npm install snowflakejs
+npm install simple-snowflake
 
 ```
 
@@ -25,7 +25,7 @@ npm install snowflakejs
 
 ```javascript
 
-const SnowFlake = require('snowflakejs');
+const SnowFlake = require('simple-snowflake');
 
 const snowFlakeGen = new SnowFlake({ epoch: new Date().getTime(), machine: 15, worker: 10 });
 
