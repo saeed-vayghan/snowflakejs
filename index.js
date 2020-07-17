@@ -97,14 +97,16 @@ const SnowFlake = function (config) {
     const binaryTime = toBinary(Number(time), 41)
     const binaryId   = toBinary(Number(this.id), 10)
     const binarySeq  = toBinary(Number(this.seq), 12)
-    const binary     = `0${binaryTime}${binaryId}${binarySeq}`
+    
+    const binary = `0${binaryTime}${binaryId}${binarySeq}`
+    const toHex  = binaryToHex(binary)
 
     return {
       binary: {
         raw: binary,
         splited: spliter(binary)
       },
-      hex: binaryToHex(binary)
+      hex: toHex.result
     };
   };
 };

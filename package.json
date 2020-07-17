@@ -1,5 +1,5 @@
 {
-  "name": "snowflakejs",
+  "name": "simple-snowflake",
   "version": "1.0.0",
   "description": "Yet another snowflake sequence id generator",
   "main": "index.js",

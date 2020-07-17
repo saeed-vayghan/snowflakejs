@@ -31,6 +31,14 @@ const snowFlakeGen = new SnowFlake({ epoch: new Date().getTime(), machine: 15, w
 
 const { binary, hex, err } = snowFlakeGen.next();
 
+/*
+  binary ==> {
+    raw: '0000000000000000000000000000000000000000000111101010000000001010',
+    splited: '0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0001 1110 1010 0000 0000 1010'
+  }
+  hex ==> 00000000001EA00A
+*/
+
 ```
 
 ## License
