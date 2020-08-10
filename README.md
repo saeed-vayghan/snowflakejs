@@ -8,11 +8,6 @@ This moduled is inspired by:
 1. https://www.callicoder.com/distributed-unique-id-sequence-number-generator/
 1. https://www.npmjs.com/package/flake-idgen
 
-## Why?
-This moduled is implemented as a weekend project in order to understand the Twitter Snowflake ID generator.
-You can find various Snowflake implementation on the net, others were too complicated to understand, So I decided to write a simple and readble one.
-
-
 ### How could you implement unique id's over a set of N servers?   
 
 #### why not use GUIDs?
@@ -58,8 +53,13 @@ This approach uses a centralized database server to generate unique incrementing
 <br><br>
 #### Solution 4: Sharded system based on postgress schema
 Link: https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c
-
+<hr>
 <br><br>
+
+
+## Why?
+This moduled is implemented as a weekend project in order to understand the Twitter Snowflake ID generator.
+You can find various Snowflake implementation on the net, others were too complicated to understand, So I decided to write a simple and readble one.
 
 
 ## How to use
