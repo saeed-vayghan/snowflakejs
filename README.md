@@ -16,7 +16,7 @@ This moduled is inspired by:
 - Index size is a key consideration
 - If you can’t keep your indexes in memory, you can’t keep your database fast
 
-<br><br>
+<br>
 
 ## # solutions
 
@@ -30,7 +30,6 @@ Implementation: `MongoDB’s ObjectId, UUID`
 > Cons1: Generally requires more storage space (96 bits or higher) to make reasonable uniqueness guarantees.
 > Cons2: Some UUID types are completely random and have no natural sort
 
-<br><br>
 #### Solution 2:  Generate IDs through dedicated service (Snowflake)
 
 > Pros1: Snowflake IDs are 64-bits, half the size of a UUID.
@@ -39,7 +38,6 @@ Implementation: `MongoDB’s ObjectId, UUID`
 > 
 > Cons1: Would introduce additional complexity.
 
-<br><br>
 #### Solution 3:  DB Ticket Servers (flickr database Ticket Servers)
 This approach uses a centralized database server to generate unique incrementing IDs. It’s like a centralized auto-increment. This approach is used by Flickr.
 
@@ -50,7 +48,6 @@ This approach uses a centralized database server to generate unique incrementing
 > Cons3: If using a single DB, becomes single point of failure. If using multiple DBs, can no longer guarantee that they are sortable over time.
 
 
-<br><br>
 #### Solution 4: Sharded system based on postgress schema
 Link: https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c
 <hr>
