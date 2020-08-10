@@ -51,7 +51,6 @@ This approach uses a centralized database server to generate unique incrementing
 #### Solution 4: Sharded system based on postgress schema
 Link: https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c
 <hr>
-<br><br>
 
 
 ## Why?
