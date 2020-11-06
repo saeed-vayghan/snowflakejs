@@ -25,15 +25,19 @@ This approach leaves **ID generation** entirely up to your **application**, and 
 Implementation: `MongoDB’s ObjectId, UUID`
 
 > Pros1: Each application thread generates IDs independently, minimizing points of failure and contention for ID generation.
+>
 > Pros2: If you use a timestamp as the first component of the ID, the IDs remain time-sortable.
 > 
 > Cons1: Generally requires more storage space (96 bits or higher) to make reasonable uniqueness guarantees.
+>
 > Cons2: Some UUID types are completely random and have no natural sort
 
 #### Solution 2:  Generate IDs through dedicated service (Snowflake)
 
 > Pros1: Snowflake IDs are 64-bits, half the size of a UUID.
+>
 > Pros2: Can use time as first component and remain sortable.
+>
 > Pros3: Distributed system.
 > 
 > Cons1: Would introduce additional complexity.
@@ -44,7 +48,9 @@ This approach uses a centralized database server to generate unique incrementing
 > Pros1: DBs are well understood and have pretty predictable scaling factors.
 >
 > Cons1: Can eventually become a write bottleneck.
+>
 > Cons2: An additional couple of machines.
+>
 > Cons3: If using a single DB, becomes single point of failure. If using multiple DBs, can no longer guarantee that they are sortable over time.
 
 
